@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/lib/ZohoEmbededAppSDK.min.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="../js/jquery-min.js"></script>
+  </head>
+  <body>
+   
+    <p> <h3>You are about to enter a remote sharing session with the below customer</h3></p>
+    <br><label for="customeremail">Customer Email</label>&nbsp;&nbsp;&nbsp;
+    <input type="text" name="customeremail" id="customeremail" width="500" height="150" ></input><br><br>
+    
+    <p>Click  <a href="https://www.zoho.com/assist/" target="_blank" id="myAnchor"> here</a> to proceed</p>
+    
+    <script type="text/javascript">
+     $(document).ready(function(){
+       ZOHO.embeddedApp.init();
+      })
+    </script>
+
+  </body>
+</html>
